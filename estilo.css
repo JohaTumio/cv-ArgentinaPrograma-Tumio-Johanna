@@ -1,0 +1,233 @@
+* {
+    font-family: "Titillium Web", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+body header {
+    z-index: 100;
+}
+
+.ocultar {
+    display: none;
+}
+
+.bg-nav {
+    background-color: #18206F
+}
+
+/* section inicio */
+.inicio {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("./img/imgNotebook.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 33rem;
+}
+
+.logo h2 {
+    font-family: 'Yellowtail';
+    text-shadow: 0 0 35px #fff;
+    font-size: 2rem;
+    text-shadow: 0 0 10px #fff;
+}
+
+.logo h2 .color {
+    font-family: "Yellowtail";
+    color: #18216f;
+    text-shadow: 1px 1px 2px rgb(248, 247, 247), 0 0 1em #fff, 0 0 0.2em #fff;
+}
+
+.info h1,
+h2 {
+    font-size: 2rem;
+}
+
+.lista_redes li a {
+    font-size: 2rem;
+    background-color: #000;
+    color: #18216f;
+    padding: 0.2rem 0.8rem;
+    border: 1px solid #18216f;
+    transition: .3s;
+}
+
+.contenedor_foto {
+    position: relative;
+}
+
+.contenedor_foto img {
+    border: 3px solid #18216f;
+    position: absolute;
+    left: 35%;
+    top: 6.5rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+/* section acerca de mi */
+#acerca_de_mi .titulo_acerca_de_mi,
+.titulo_experiencia,
+.titulo_educacion, .titulo_habilidades {
+    font-family: "Yellowtail";
+    font-size: 2.5rem;
+    color: #000;
+}
+
+#acerca_de_mi .titulo_acerca_de_mi {
+    margin: 7rem;
+}
+
+.icono_perf_ub_obj {
+    color: #18216f
+}
+
+.btn_perf_ubi_obj {
+    width: 8rem;
+    position: relative;
+    height: max-content;
+    border: 3px ridge #149CEA;
+    outline: none;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn_perf_ubi_obj::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.btn_perf_ubi_obj::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    transition: 0.5s;
+}
+
+.btn_perf_ubi_obj:hover::before,
+.btn_perf_ubi_obj:hover::after {
+    transform: scale(0)
+}
+
+.btn_perf_ubi_obj:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+}
+
+/* seccion Educacion */
+.img_carousel {
+    height: 28rem;
+}
+
+
+
+/* vista tablet */
+/* section inicio */
+@media (min-width: 768px) {
+    .logo h2 {
+        font-size: 3rem;
+    }
+
+    .info h1,
+    h2 {
+        font-size: 3rem;
+    }
+
+    .lista_redes li a {
+        font-size: 2.5rem;
+    }
+
+    .contenedor_foto img {
+        left: 40%;
+        top: 2rem;
+        width: 15rem;
+        height: 15rem;
+    }
+
+    /* section acerca de mi */
+    #acerca_de_mi .titulo_acerca_de_mi,
+    .titulo_experiencia,
+    .titulo_educacion, .titulo_habilidades {
+        font-size: 3rem;
+    }
+
+    #acerca_de_mi .titulo_acerca_de_mi {
+        margin: 13rem;
+    }
+
+    /* seccion Educacion */
+    .img_carousel {
+        height: 30rem;
+    }
+}
+
+
+/* vista desktop */
+/* section inicio */
+@media (min-width: 1024px) {
+    .inicio {
+        height: 45rem;
+    }
+
+    .info h1,
+    h2 {
+        font-size: 4rem;
+    }
+
+    .lista_redes li a {
+        font-size: 3rem;
+    }
+
+    .contenedor_foto img {
+        left: 42%;
+        top: 6.5rem;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .lista_nav li a:hover {
+        transition: all 0.8s;
+        box-shadow: 0 0 35px #fff;
+        border-radius: 50px;
+    }
+
+    .lista_redes li a:hover {
+        color: #fff;
+        background-color: #18216f;
+        box-shadow: 0 0 20px #fff;
+    }
+
+    /* section acerca de mi */
+    #acerca_de_mi .titulo_acerca_de_mi,
+    .titulo_experiencia,
+    .titulo_educacion, .titulo_habilidades {
+        font-size: 4rem;
+    }
+    /* seccion Educacion */
+    .img_carousel {
+        height: 50rem;
+    }
+}
