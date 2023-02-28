@@ -32,6 +32,7 @@ let habilidades = [
     {id: 3, titulo: "JAVASCRIPT", porcentaje: 65},
     {id: 4, titulo: "COMPAÑERISMO", porcentaje: 90},
     {id: 5, titulo: "RESOLUCION DE PROBLEMAS", porcentaje: 80},
+    {id: 6, titulo: "TRABAJO EN EQUIPO", porcentaje: 95}
 ]
 
 let contenedorHabilidades = document.getElementById ("contenedorHabilidades")
@@ -71,6 +72,7 @@ function animar(id) {
         document.getElementById("barra" + id).classList.toggle("final_barra_compañerismo") 
     }else if (item == 5){
         document.getElementById("barra" + id).classList.toggle("final_barra_res_problemas") 
+    }else if(item == 6){
+        document.getElementById("barra" + id).classList.toggle("final_barra_trabajo_equipo") 
     }
-    
 }
